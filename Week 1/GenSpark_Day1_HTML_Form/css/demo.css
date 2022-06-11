@@ -1,0 +1,79 @@
+@keyframes fadein{
+    0%{
+        opacity:0
+    }
+    to{
+        opacity:1
+    }
+}
+
+html{
+    font-family:'poppins',arial,sans-serif;
+    font-size:100%;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -khtml-user-select:none;
+    -o-user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none
+}
+
+body,html{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    right:0;
+    bottom:0;
+    margin:0;
+    overflow:hidden
+}
+
+
+body,h3,p{
+    font-size:0.9em
+}
+
+body{
+    background:linear-gradient(45deg,#0f0d2f,#24101f)
+}
+
+#world{
+    z-index:9997;
+    pointer-events:none;
+    animation-name:fadein;
+    animation-duration:2s;
+    animation-delay:3s;
+    animation-fill-mode:forwards;
+    opacity:0
+}
+
+
+#wrapper{
+    display:inline-grid;
+    margin:0;
+    position:absolute;
+    right:0;
+    left:0;
+    overflow:hidden;
+    -moz-animation:fadein 2.5s;
+    -ms-animation:fadein 2.5s;
+    -o-animation:fadein 2.5s;
+    animation:fadein 2.5s;
+    color:#c38d7c
+}
+
+#wrapper,body{
+    align-items:center;
+    justify-content:center
+}
+
+#my-form{
+    font-family:'Playfair Display',serif;
+    font-size:2.6em;
+    text-align:center;
+    line-height:1.15em;
+    letter-spacing:0;
+    font-weight:400;
+    animation-delay:2s
+}
